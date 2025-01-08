@@ -1,6 +1,5 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getStorage } from "firebase/storage";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -14,9 +13,4 @@ const firebaseConfig = {
   appId: "1:284121733678:web:9578ec1e06cf348b929dbf",
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig); // No `export` here
-const storage = getStorage(app);
-
-// Export `app` and `storage` in a single statement
-export { app, storage };
+export const app = initializeApp(firebaseConfig);
